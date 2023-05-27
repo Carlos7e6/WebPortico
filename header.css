@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    --marronclaro: #A68B81;
+    --grisaceo: #FFFBEE;
+    --marron: #725B49;
+    --marronOscuro: #3a2e25;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    padding-bottom: 0em;
+    background-color: #ffc40000;
+
+    height: 10em;
+    transition: background-color 0.2s linear, height 0.2s linear, border-bottom 0.2s linear, padding 0.2s linear;
+}
+
+#divHeader.minus {
+    padding: 1.3em;
+    height: 5em;
+    background-color: #fffbee9c;
+    border-bottom: 3px var(--marronOscuro) solid;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+nav li {
+    list-style-type: none;
+    border-bottom: 3px var(--marronOscuro) solid;
+
+}
+
+nav li a {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: var(--marronOscuro);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--marron);
+}
+
+.icons,
+.hamburguesa,
+.logo {
+    align-self: center;
+}
+
+.icons img,
+.hamburguesa {
+    margin-top: 0.2em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+   justify-content: center;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    /* Aquí puedes agregar los estilos que deseas aplicar para pantallas pequeñas */
+    header nav {
+        display: none;
+    }
+
+    header div {
+        padding: 1em;
+        background-color: #ffc40000;
+        height: 5em;
+    }
+
+    .hamburguesa{
+        display: initial;
+    }
+
+    #divHeader.minus {
+        padding: 0.5em;
+        height: 3em;
+        background-color: #fffbee9c;
+        border-bottom: 3px var(--marronOscuro) solid;
+    }
+
+    #logo {
+        width: 4em;
+        height: 4em;
+        transition: width 0.2s linear, height 0.2s linear;
+    }
+
+    #logo.minus {
+        width: 2em;
+        height: 2em;
+    }
+}

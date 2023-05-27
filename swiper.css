@@ -1,0 +1,22 @@
+.swiper {
+  display: flex;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  color: #FFFBEE;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  color: #3a2e25;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFFBEE;
+}
+
+.overflow{
+ 
+  object-fit:cover;
+}

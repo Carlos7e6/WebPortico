@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    --marronclaro: #A68B81;
+    --grisaceo: #fcf6e3;
+    --marron: #725B49;
+    --marronOscuro: #3a2e25;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: content-box;
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_1280.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+section {
+    margin-top: 5.3em;
+}
+
+.sectionImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    width: 100%;
+    font-size: 2em;
+    color: var(--marronOscuro)
+}
+
+h2{
+    color: var(--grisaceo);
+}
+
+.divAboutUs {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.divTextoAboutUs
+{
+    width: 40em;
+    margin-left: 9em;
+}
+
+.divAboutUs img {
+    width: 60em;
+}
+
+
+@media (max-width: 1024px) {
+
+    /* Aquí puedes agregar los estilos que deseas aplicar para pantallas pequeñas */
+    .sectionImg {
+
+        height: 30em;
+    }
+
+    section {
+        margin-top: 2em;
+        /* height: 90vh; */
+    }
+
+    .divAboutUs {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divAboutUs img {
+
+        width: 100%;
+    }
+
+    .divTextoAboutUs{
+
+        margin-left: 0em;
+        margin-top: 2em;
+        padding: 1em;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+
+    p{
+        font-size: 1.2em;
+        color: var(--marronOscuro)
+    }
+
+
+}
