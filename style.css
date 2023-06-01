@@ -55,6 +55,7 @@ p{
 
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .divTextoAboutUs
@@ -82,7 +83,7 @@ p{
     text-align: center;
 }
 
-.ourKitchen div{
+.button{
     margin-top: 2em;
     width: 15em;
     height: 5em;
@@ -91,9 +92,15 @@ p{
     justify-content: center;
     align-items: center;
 
+    transition: 0.2s;
     background-color: var(--marronOscuro);
 
     border-radius: 5px;
+}
+
+.button:hover
+{
+    background-color: var(--marron);
 }
 
 .ourKitchen div a
